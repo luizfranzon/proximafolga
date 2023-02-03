@@ -5,6 +5,8 @@ import utc from 'dayjs/plugin/utc'
 import timezone from 'dayjs/plugin/timezone'
 import relativeTime from 'dayjs/plugin/relativeTime'
 
+import Head from 'next/head'
+
 dayjs.locale('pt-br')
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -51,16 +53,21 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="text-white flex flex-col items-center justify-center h-screen gap-4 px-4">
-      <h1 className="text-3xl text-center xl:text-6xl font-bold text-[#c4a7e7]">
-        Quando é a próxima folga do Luiz?
-      </h1>
-      <span className="text-3xl text-center xl:text-6xl font-medium italic">
-        {nextDayOff}.
-      </span>
-      <span className="text-3xl text-white/60 text-center xl:text-4xl font-medium italic">
-        {nextDayOffDate}.
-      </span>
-    </div>
+    <>
+      <Head>
+        <title>Próxima folga do Luiz</title>
+      </Head>
+      <div className="text-white flex flex-col items-center justify-center h-screen gap-4 px-4">
+        <h1 className="text-3xl text-center xl:text-6xl font-bold text-[#c4a7e7]">
+          Quando é a próxima folga do Luiz?
+        </h1>
+        <span className="text-3xl text-center xl:text-6xl font-medium italic">
+          {nextDayOff}.
+        </span>
+        <span className="text-3xl text-white/60 text-center xl:text-4xl font-medium italic">
+          {nextDayOffDate}.
+        </span>
+      </div>
+    </>
   )
 }
