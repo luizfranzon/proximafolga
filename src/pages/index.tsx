@@ -18,7 +18,7 @@ export default function Home() {
   const [nextDayOffDate, setNextDayOffDate] = useState('')
 
   useEffect(() => {
-    const now = dayjs('2023-02-07')
+    const now = dayjs()
     let dayOff = dayjs('2023-01-31')
     let lastDayOff
 
