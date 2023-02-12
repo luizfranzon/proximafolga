@@ -30,7 +30,12 @@ export default function Home() {
     const workedDaysCurrentWeek = now.diff(lastDayOff, 'day')
     setNextDayOffDate(dayOff.format('DD/MM - dddd'))
 
+    console.log(workedDaysCurrentWeek)
+
     switch (workedDaysCurrentWeek) {
+      case 0:
+        setNextDayOff('Hoje')
+        break
       case 1:
         setNextDayOff('em 5 dias')
         break
