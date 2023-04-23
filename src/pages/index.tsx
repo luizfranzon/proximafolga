@@ -62,7 +62,7 @@ export default function Home() {
       <Head>
         <title>Próxima folga do Luiz</title>
       </Head>
-      <div className="text-white flex flex-col items-center justify-center h-screen gap-4 px-4">
+      <div className="text-white flex flex-col items-center justify-center h-screen bg-[#232136] gap-4 px-4">
         <h1 className="text-3xl text-center xl:text-6xl font-bold text-[#c4a7e7]">
           Quando é a próxima folga do Luiz?
         </h1>
