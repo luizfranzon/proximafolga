@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta name="theme-color" content="#3c375a" />
       </Head>
-      <body className="bg-roséBackground h-screen">
+      <body className="h-screen">
         <Main />
         <NextScript />
       </body>
