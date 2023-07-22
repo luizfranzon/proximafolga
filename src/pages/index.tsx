@@ -6,6 +6,7 @@ import timezone from 'dayjs/plugin/timezone'
 import relativeTime from 'dayjs/plugin/relativeTime'
 
 import Head from 'next/head'
+import { Days } from '@/components/Days'
 
 dayjs.locale('pt-br')
 dayjs.extend(utc)
@@ -63,6 +64,7 @@ export default function Home() {
         <title>Próxima folga do Luiz</title>
       </Head>
       <div className="text-white flex flex-col items-center justify-center h-screen bg-[#232136] gap-4 px-4">
+        <Days />
         <h1 className="text-3xl text-center xl:text-6xl font-bold text-[#c4a7e7]">
           Quando é a próxima folga do Luiz?
         </h1>
