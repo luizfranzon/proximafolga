@@ -29,7 +29,11 @@ export default function Home() {
     }
 
     const workedDaysCurrentWeek = now.diff(lastDayOff, 'day')
-    setNextDayOffDate(dayOff.format('DD/MM - dddd'))
+    setNextDayOffDate(
+      dayOff.format('DD/MM') === '05/08'
+        ? `🎂 ${dayOff.format('DD/MM - dddd')}🥳`
+        : dayOff.format('DD/MM - dddd'),
+    )
 
     console.log(workedDaysCurrentWeek)
 
