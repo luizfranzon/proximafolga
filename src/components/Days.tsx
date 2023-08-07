@@ -2,7 +2,7 @@ import dayjs from 'dayjs'
 
 export function Days() {
   const now = dayjs()
-  const liberty = dayjs('2023-08-11')
+  const liberty = dayjs('2023-09-10')
 
   const daysRemaining = liberty.diff(now, 'day')
 
