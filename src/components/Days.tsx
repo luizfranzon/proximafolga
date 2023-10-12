@@ -4,11 +4,11 @@ export function Days() {
   const now = dayjs()
   const libertyDay = dayjs('2023-10-12')
 
-  let cardText 
+  let cardText
   if (libertyDay.diff(now, 'day') === 0) {
-    cardText = "Hoje acaba!"
+    cardText = 'Hoje acaba!'
   } else if (libertyDay.diff(now, 'day') === 1) {
-    cardText = "Amanhã acaba!"
+    cardText = 'Amanhã acaba!'
   } else {
     cardText = libertyDay.diff(now, 'day')
   }
