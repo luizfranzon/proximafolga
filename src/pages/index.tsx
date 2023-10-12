@@ -68,15 +68,14 @@ export default function Home() {
         <title>Próxima folga do Luiz</title>
       </Head>
       <div className="text-white flex flex-col items-center justify-center h-screen bg-[#232136] gap-4 px-4">
-        <Days />
         <h1 className="text-3xl text-center xl:text-6xl font-bold text-[#c4a7e7]">
           Quando é a próxima folga do Luiz?
         </h1>
         <span className="text-3xl text-center xl:text-6xl font-medium italic">
-          {nextDayOff}.
+          TODO DIA AGORA
         </span>
-        <span className="text-3xl text-white/60 text-center xl:text-4xl font-medium italic">
-          {nextDayOffDate}.
+        <span className="text-3xl text-white/60 text-center xl:text-4xl font-medium">
+          liberdade cantou familia! 😎😎😎
         </span>
       </div>
     </>
